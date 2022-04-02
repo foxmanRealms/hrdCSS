@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+p {
+    font-size: 50px;
+    }
+    a{
+        font-size: 2em;
+    }
+    /* 반응선택자에서 우선순위 : hover -> active */
+    /* 요소:hover  요소에 마우스를 올렸을때 */
+div:hover{
+    color:yellow
+}
+
+/* 요소:active 요소를 클릭했을 때  */
+div:active{
+    color:red
+    </style>
+</head>
+<body>
+    <!-- 크기단위 -->
+    <!-- 1. px : 화소 하나의 크기에 대응되는 단위(고정값)
+        2. % : 기본 설정된 크기에서 상대적으로 크기를 지정
+        3. em : 부모 요소의 크기에 따른 배수 단위      부모는 직계 바로위. 나를 감싸는 애다-->
+
+    <p>
+        스마트인재개발원
+        <a > 박병관 </a>
+    </p>
+    <h1> 박수현 </h1>
+
+    <div>이정명</div>
+</body>
+</html>

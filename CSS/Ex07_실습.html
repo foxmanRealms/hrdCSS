@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 2. 스타일 적용 */
+        /* 마우스 올리기 전까지 sup태그는 안보이게! */
+        sup{
+            display: none;
+            border: 1px solid black;
+        }
+        /* 마우스를 올리면 sup태그가 나타난다! */
+        a:hover+sup{
+            display: inline;
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <!-- 1. html 뼈대부터 만들기 -->
+   <a href="https://www.naver.com"> 네이버 </a>
+   <sup> www.naver.com </sup>
+    <br>
+   <a href="https://www.daum.net"> 다음 </a>
+   <sup> www.daum.net </sup>
+    
+</body>
+</html>

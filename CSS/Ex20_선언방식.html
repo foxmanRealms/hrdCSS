@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2. 내부 방식 : style태그를 사용해서 지정 -->
+    <style>
+        h1{
+          background-color: black;  
+        }
+
+    </style>
+    <!-- 3. 외부 방식 : html태그를 사용해서 외부css적용 -->
+    <!--특징1. link태그 순서대로 다운로드  
+        특징2. 병렬다운로드 지원
+        특징3. 대신 link가 많아지면 코드가 지저분해짐 -->
+    <link rel="stylesheet" href="Ex20_외부방식.css">
+    
+    <!-- 4. import 방식  -->
+    <!-- 특징1. 다운로드 순서를 예측불가능
+         특징2. 병렬 다운로드 지원 x
+         특징3. 외부css파일이 많을 때 link태그보다 간결한 코드 -->
+    <style>
+        @import url("Ex20_import방식.css");
+    </style>
+
+</head>
+<body>
+    <!-- 1. 인라인 방식  html태그 내에 style 속성으로 지정-->
+    <h1 style="color: tomato;"> 이정명 </h1>
+    <h2> 스마트인재개발원</h2>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            /* border : 테두리 */
+        #border{
+            /* 테두리 스타일 */
+            width: 100px; height:  100px;
+            border-style:dashed ;
+            border-width: 10px;
+            border-color: tomato;
+            
+            /* 한줄로 작성 순서상관 x*/
+            border:dashed 10px tomato;    
+        }
+            /* border-radius : 테두리를 둥글게 */
+    #radius{
+        margin: 5px;
+        width: 100px; height: 100px;
+        background-color: orange;
+        border-radius: 10%;
+        /* 원을 만드는 것은 50% 된다. */
+
+        /* px값 혹은 %로 표현 가능 
+        100px의 50%=50px  */
+    }   
+    #tree{
+            margin: 5px;
+            width: 200px; height: 200px;
+            background-color: green;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            /* 각 모서리를 따로따로 둥글게 가능! */
+        }
+
+
+    </style>    
+</head>
+<body>
+    <div id="border">    </div>
+    <div id="radius">    </div>
+    <div id="tree">    </div>
+</body>
+</html>

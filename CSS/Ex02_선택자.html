@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체선택자 '*'   */
+        *{
+            color:rgb(42, 165, 114);
+        }
+        /* 타입선택자 :요소이름  */
+        h1{
+            color: orangered;
+        }
+        /* 클래스 선택자: .클래스이름  */
+        /* 예제  Java수업을 들어온 사람만 글자배경색을 검정색으로 표시 */
+        .cap{
+            background-color: rgb(184, 196, 26);
+        }
+
+        /*아이디 선택자: #아이디이름  */
+        /* html 수업을 들어온 사람만 배경색을 회색으로 변경 */
+        #I{
+            background-color:burlywood;
+        }
+
+        /* 계층선택자 (자손, 자식, 근접후행형제, 후행형제)
+                기준요소 계층선택자기호 변경요소  */
+        /* 1. body를 기준으로 해서 li의 요소의 글자크기를 100px으로  */
+        body li{
+            font-size: 40px;
+        }
+        /* 2. 첫번째 li를 기준으로 해서 class이름이 crew인 요소를 기울임꼴로  */
+        li~.crew{
+            font-style: italic;
+        }
+        /* 위는 li가 아닌애 들도 변할 가능성이 있다. */
+        /* 
+        li~li.crew{
+            li 후행 중에서 li이고 클래스 crew인 애들만 변경해준다
+        }
+         */
+    </style>
+</head>
+<body>
+    <h1> 비스트 </h1>
+    <ul>
+        <li class="cap">정정용</li>
+        <li id="I" class="">이정명</li>
+        <li class="crew">김민근</li>
+        <li class="crew">김시윤</li>
+        <li class="crew">박진수</li>
+
+    </ul>
+    <a href="https://www.naver.com"> 네이버 </a>
+</body>
+</html>
